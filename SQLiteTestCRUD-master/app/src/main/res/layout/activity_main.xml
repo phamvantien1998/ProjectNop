@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/food"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.SearchView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/searchView">
+
+   </androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="ID Order:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_idorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Order name:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_ordername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Price:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:numeric="integer|decimal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Quantity:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Time order:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_timeorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="date|datetime"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Date order:"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_dateorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="date|datetime"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:backgroundTint="#2196F3"
+            android:text="ADD"
+            android:textColor="#FAFAFA"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:backgroundTint="#2196F3"
+            android:text="UPDATE"
+            android:textColor="#FAFAFA"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:backgroundTint="#2196F3"
+            android:text="DELETE"
+            android:textColor="#FAFAFA"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_getall"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:backgroundTint="#2196F3"
+            android:text="GET ALL"
+            android:textColor="#FAFAFA"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/getTotalMoney"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text="TOTAL MONEY"
+            android:textSize="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=" List Order "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#98D2EC"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
